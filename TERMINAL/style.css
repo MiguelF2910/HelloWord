@@ -1,0 +1,214 @@
+
+body 
+{
+
+    background-image:url('windowsxp.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.img
+{
+    width: 25px;
+}
+.img2
+{
+  width: 75px;
+}
+.topleft {
+  /*position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+  width: 33.33%;*/
+  top: 8px;
+  left: 50px;
+  width: 80px;
+  height: 120px;
+  /*background-color: aliceblue;*/
+  margin-bottom: 20px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 50px;
+  right: 16px;
+  font-size: 18px;
+}
+.topright {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  font-size: 18px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5087F1;
+    text-align: center; /* Centra los elementos en el pie de página */
+    position: absolute;
+    bottom: 0; /* Establece la posición en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+   /* height: auto;*/
+}
+ li {
+    float:left;
+  }
+  .li1
+  {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .a1{
+    display: block;
+    color: white;
+    background:#008E00 ;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  .a2
+  {
+    display: block;
+    background:#1B50B8;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  .a3
+  {
+    display: block;
+    background:#1B50B8;
+    text-align: center;
+    padding: 15.5px 18px;
+    text-decoration: none;
+  }
+  .a4
+  {
+    display: block;
+    color: white;
+    background:#008E00 ;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+
+
+  li a:hover {
+    background-color: #1B50B8;
+  }
+  li .a1:hover
+  {
+    background-color: #00DB00;
+  }
+  li .a4:hover
+  {
+    background-color: #00DB00;
+  }
+  .p
+  {
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+  }
+  .p1
+  {
+    color: #000;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+  }
+
+
+
+/*Pantallas o salidas del cmd*/
+.container {
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+
+}
+  .terminal {
+    display: none;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 500px;
+    background-color: #000;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    font-family: "Courier New", monospace;
+  }
+
+  .blocnotas {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 500px;
+    background-color: #FFF;
+    border: 2px solid #5087F1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #000;
+    font-family: "Courier New", monospace;
+  }
+  
+  .title-bar {
+    background-color: #5087F1;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .title-bar2{
+    background-color:beige;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .title {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 25px;
+  }
+
+.texto {
+    white-space: nowrap;/* Evita saltos de línea */
+    overflow: hidden; /* Oculta el texto que no cabe en el contenedor */
+    border-right: 2px solid transparent; /* Crea el cursor intermitente */
+
+    /* Configura la animación de escritura */
+    animation: escribir 5s steps(150);
+}
+
+@keyframes escribir {
+from{width: 0;}
+to {width: 100%;}
+}
+  
